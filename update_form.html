@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>PTU푸드맵 | 음식점 등록하기</title>
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="publisher" content="PTU푸드맵 | 음식점 등록하기">
+        <meta name="author" content="PTU푸드맵 | 음식점 등록하기">
+        <meta name="robots" content="index,follow">
+        <meta name="keywords" content="PTU푸드맵,평택대밥집추천,평택대맛집,평택맛집,평택랜덤맛집">
+        <meta name="description" content="여러분의 맛집을 PTU푸드맵에 추가해주세요!">
+        <meta property="og:title" content="PTU푸드맵 | 음식점 등록하기">
+        <meta property="og:site_name" content="PTU푸드맵 | 음식점 등록하기">
+        <meta property="og:author" content="PTU푸드맵 | 음식점 등록하기">
+        <meta property="og:image" content="https://github.com/ptubab/ptubab.github.io/blob/master/data/oglogo.png?raw=true">
+        <meta property="og:description" content="여러분의 맛집을 PTU푸드맵에 추가해주세요!"/>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/hiun/NanumSquare/df655a799cdbfe977ae05f6cf484e77ec76b3312/nanumsquare.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+        
+        <link rel="stylesheet" href="css/update_form.css">
+        <script src="js/update_form.js"></script>
+    </head>
+    
+    <body>
+        <form id="form">
+            <div class="container">
+                <br>
+                <h1>새로운 음식점을 등록해주세요</h1>
+                <p>등록된 정보는 즉시 반영되며, 부적절한 내용 포함시 운영자에 의하여 필터링 될 수 있음을 알려드립니다.</p>
+                <hr>
+                <div class="form-group">
+                    <label for="writer-name">작성자 이름</label>
+                    <input type="text" class="form-control" id="writer-name" placeholder="작성자의 이름을 입력해주세요." required>
+                    <small class="form-text">등록된 정보의 확인을 위한 등록이며, 별도의 용도로 절대 사용하지 않습니다</small>
+                </div>
+                <div class="form-group">
+                    <label for="place_name">음식점 이름</label>
+                    <input type="text" class="form-control" id="place-name" placeholder="ex) 맥도날드 평택GS DT점" required>
+                </div>
+                <div class="form-group">
+                    <label for="place_address">음식점 주소</label>
+                    <input type="text" class="form-control" id="place-address" placeholder="클릭해서 주소를 검색해주세요" readonly required>
+                    <input type="text" class="form-control"id="ex-place-address" placeholder="추가주소" required>
+                    <small class="form-text">도로명 주소를 클릭해 주시면 주소를 확인하실수 있습니다!!</small>
+                </div>
+                <div class="form-group">
+                    <label for="description">음식점 설명</label>
+                    <input type="text" class="form-control" id="description" placeholder="ex) 여기가 음청난 맛집입니다!">
+                </div>
+                <div class="form-group">
+                    <label for="place_phone">음식점 전화번호</label>
+                    <input type="text" class="form-control" id="place-phone" placeholder="ex) 031-123-4681">
+                </div>
+                <p style="font-weight: bold;">음식점 대표메뉴</p>
+                <div class="form-row">
+                    <input type="text" class="form-control" id="menu-name-1" placeholder="메뉴1 이름">
+                    <input type="number" class="form-control" id="menu-price-1" placeholder="메뉴1 가격">
+                    <br>
+                    <input type="text" class="form-control" id="menu-name-2" placeholder="메뉴2 이름">
+                    <input type="number" class="form-control" id="menu-price-2" placeholder="메 뉴2 가격">
+                    <br>
+                    <input type="text" class="form-control" id="menu-name-3" placeholder="메뉴3 이름">
+                    <input type="number" class="form-control" id="menu-price-3" placeholder="메뉴3 가격">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="place-tag">음식점 #헤쉬태그</label>
+                    <input type="text" class="form-control" id="place-tag" placeholder="#분식 #김밥 #배달안됨">
+                    <small class="form-text">#해쉬테그1 #해쉬테그 형식으로 띄워서 넣어주세요! 기본 헤쉬테그목록은 메인 페이지를 참조하세요! 그 외에것도 넣을 수 있습니다.</small>
+                </div>
+                <button class="btn" id="finish">작성완료</button>
+            </div>
+        </form>
+    </body>
+</html>

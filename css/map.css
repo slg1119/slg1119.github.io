@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans KR', 'AppleSDGothicNeo-Regular', 'Nanum Gothic', Helvetica, Arial, sans-serif;
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid #dbdbdb;
+    padding: .375rem .375rem;
+    font-size: .75rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    color: black;
+    background-color: white;
+    margin-top: .7rem;
+}
+.btn:hover{
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.contents{
+    position: relative;
+    overflow: hidden;
+}
+.column-wrapper {
+    display: flex;
+    border-top: 6px solid white;   
+}
+
+.column-content{
+    width: 100%;
+    background-color: white;
+    flex: 1;
+    float: left;
+    padding: 0 20px;
+    height: 100%;
+}
+.column-content>.inner{
+    box-sizing: border-box;
+    border: 0 none;
+}
+
+.column-content>.inner>section{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.store-detail{
+    padding: 30px 0 0;
+}
+
+.store-detail>header{
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dbdbdb;
+    min-height: 74px;
+    font-size: 100%;
+    display: block;
+}
+.store-detail>header .title{
+    padding-right: 50px;
+    max-width: 75%;
+    font-size: 1.8rem;
+    line-height: 46px;
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    color: black;
+}
+
+.store-detail>header .title .store-name{
+    font-size: 100%;
+    font-weight: normal;
+    display: inline-block;
+    max-width: 100%;
+    word-break: break-all;
+    font-weight: bold;
+}
+.store-detail>header .title .store-name .eng-name{
+    font-size: 50%;
+    display: inline-block;
+    max-width: 100%;
+    word-break: break-all;
+
+}
+.store-detail>header .hash-tags{
+    margin: 5px 0 10px;
+}
+.store-detail>header .hash-tags .tags{
+    font-size: 0.8rem;
+    color: #9b9b9b;
+    border: 0 none;
+    -webkit-tap-highlight-color: transparent;
+}
+.store-detail .info{
+    display: block;
+    margin-top: 20px;
+}
+.store-detail .info th{
+    width: 110px;
+    font-size: 0.9rem;
+    color: #9b9b9b;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+.store-detail .info td{
+    font-size: 0.9rem;
+    color: #4f4f4f;
+    line-height: 1.7;
+    text-align: left;
+    vertical-align: middle;
+    padding-bottom: 5px;
+}
+.store-detail .info td ul{
+    list-style: none;
+}

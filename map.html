@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PTU푸드맵</title>
+    
+    <meta name="title" content="PTU푸드맵">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="publisher" content="PTU푸드맵">
+        <meta name="author" content="PTU푸드맵">
+        <meta name="robots" content="index,follow">
+        <meta name="keywords" content="PTU푸드맵,평택대밥집추천,평택대맛집,평택맛집,평택랜덤맛집">
+        <meta name="description" content="평택대 학생들을 위한 음식집 추천 페이지입니다.">
+        <meta property="og:title" content="PTU푸드맵">
+        <meta property="og:site_name" content="PTU푸드맵">
+        <meta property="og:author" content="PTU푸드맵">
+        <meta property="og:image" content="https://github.com/ptubab/ptubab.github.io/blob/master/data/oglogo.png?raw=true">
+        <meta property="og:description" content="평택대 학생들을 위한 음식집 추천 페이지입니다."/>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/map.css">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/hiun/NanumSquare/df655a799cdbfe977ae05f6cf484e77ec76b3312/nanumsquare.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1d66e1595ea1dab7975ac4b5453e87ff&libraries=services"></script>
+    <script src="js/map.js"></script>
+</head>
+<body>
+    <div class="contents">
+        <aside class="store-images">
+        </aside>
+        <div class="column-wrapper">
+            <div class="column-content">
+                <div class="inner">
+                    <section class="store-detail">
+                        <header>
+                            <div>
+                                <span class="title">
+                                    <h1 class="store-name" id="name">
+                                        음식점이름
+                                    </h1>
+                                </span>
+                            </div>
+                            <div class="hash-tags">
+                                <span class="tags" id="tags">
+                                    #햄버거 #아이스크림 #배달가능 #24시간
+                                </span>
+                            </div>
+                        </header>
+                        <table class="info">
+                            <tbody>
+                                <tr>
+                                    <th>설명</th>
+                                    <td id="description"></td>
+                                </tr>
+                                <tr>
+                                    <th>주소</th>
+                                    <td id="address"></td>
+                                </tr>
+                                <tr>
+                                    <th>전화번호</th>
+                                    <td id="phone"></td>
+                                </tr>
+                                <tr>
+                                    <th>추천메뉴</th>
+                                    <td>
+                                        <ul id="menus">
+                                            <li id="menu1"></li>
+                                            <li id="menu2"></li>
+                                            <li id="menu3"></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class ="map"id="map" style="width:100%;height:400px;"></div>
+                        <button class="btn" href="./index.html" id ="hrmain">메인페이지로 돌아가기</button>
+                        <button class="btn" style="float: right;" id="other">다른 음식점 찾기</button>
+                    </section>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
